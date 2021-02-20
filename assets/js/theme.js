@@ -1,4 +1,4 @@
-button = document.getElementById("goToTop");
+let button = document.getElementById("goToTop");
 
 window.onscroll = function() {scroll()};
 
@@ -17,3 +17,11 @@ function goToTop() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;
 }
+
+const menu = document.querySelector('.menu');
+const links = document.querySelector('.links');
+const close = document.querySelector('.close');
+
+menu.addEventListener('click', () =>{
+    links.classList.toggle("open");
+});
