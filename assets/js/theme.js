@@ -24,4 +24,5 @@ const close = document.querySelector('.close');
 
 menu.addEventListener('click', () =>{
     links.classList.toggle("open");
+    menu.classList.toggle("open");
 });
