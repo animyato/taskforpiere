@@ -26,6 +26,11 @@
             margin-top: 40px;
             cursor: pointer;
         }
+        .menu.open{
+            position: fixed;
+            left: 89.2vw;
+            top: -2px;
+        }
         .links{
             position: fixed;
             display: flex;
@@ -46,6 +51,7 @@
         .links.open{
             clip-path: circle(1500px at 90% -10%);
             -webkit-clip-path: circle(1500px at 90% -10%);
+            overflow-y: hidden;
         }
 
         .links a{
@@ -122,7 +128,7 @@
                 <img src="assets/img/logo.png" alt="">
             </div>
             <div class="menu">
-                <img src="assets/img/vector.png" alt="X">
+                <img src="assets/img/vector.png" alt="">
             </div>
             <div class="links">
                 <a href="#">Ideja</a>
