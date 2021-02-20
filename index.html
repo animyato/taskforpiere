@@ -8,14 +8,121 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/logo2.png">
 	<script src="assets/js/theme.js" defer></script>
 </head>
+<style>  
+    @media screen and (max-width: 800px){
+        .logo img{
+            width: 60%;
+            height: auto;
+        }
+        .menu{
+            transform: scale(1.2);
+            z-index: 2;
+            display: block;
+            margin-left: auto;
+            margin-right: 7vw;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        .links{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: white;
+            margin-top: 0vh;
+            padding-top: 10vh;
+            height: 100vh;
+            width: 100%;
+            clip-path: circle(0px at 90% -10%);
+            -webkit-clip-path: circle(0px at 90% -10%);
+            transition: all 1s ease-out;
+        }
+        .links a:hover{
+            border: none;
+        }
+        .links.open{
+            clip-path: circle(1500px at 90% -10%);
+            -webkit-clip-path: circle(1500px at 90% -10%);
+        }
+
+        .links a{
+            margin-bottom: 10%;
+        }
+        .container-buttons{
+            display: block;
+        }
+        .first_section{
+            margin-left: 1vw;
+        }
+        .secound_section{
+            margin-left: 1vw;
+            line-height: 2vw;
+        }
+        .phone,
+        .question{
+            width:80%;
+        }
+
+        .sponsors_img{
+            transform: scale(1);
+        }
+        .column_one img{
+            margin-right: -13vw;
+        }
+        .column_one p,
+        .column_two a,
+        .column_three p,
+        .column_three h1{
+            display: none;
+        }
+
+        .column_four{
+            margin-top: 17vh;
+        }
+        .column_four h1{
+            font-size: 120%;
+            text-align: left;
+        }
+
+        .facebook{
+            width: 2.3vw;
+        }
+        .icons{
+            margin-left: 1vw;
+        }
+        .instagram{
+            margin-left: 5vw;
+            width: 3.6vw;
+        }
+
+        .column_four p:not(.mini),
+        .mini{
+            font-size: 90%;
+            text-align: left;
+            margin-bottom: 1vh;
+        }
+
+        .column_four{
+            margin-left: 1vw;
+        }
+
+        .column_three{
+            margin-left: 1vw;
+        }
+    }
+</style>
 <body>
 	<main>
         <button onclick="goToTop()" id="goToTop">^</button>
         <div class="navbar">
             <div class="logo">
                 <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <img src="assets/img/Vector.png" alt="">
             </div>
             <div class="links">
                 <a href="#">Ideja</a>
@@ -110,9 +217,9 @@
             </div>
             <div class="column_four">
                 <h1>Juris Gogulis</h1>
-                <p>juris.gogulis@sparkleheart.org</p>
-                <p>+37126890034</p>
-                <p>Biķernieku iela 24a - 5, LV-1006</p>
+                <p class="c4">juris.gogulis@sparkleheart.org</p>
+                <p class="c4">+37126890034</p>
+                <p class="c4">Biķernieku iela 24a - 5, LV-1006</p>
                 <div class="icons">
                     <img class="facebook" src="assets/img/facebook.png" alt="">
                     <img class="instagram" src="assets/img/instagram.png" alt="">
